@@ -55,6 +55,7 @@ ul li{
 ul li a{
     text-decoration: none;
     color: #fff;
+    padding-left: 0rem;
 }
 
 form{
@@ -64,5 +65,5 @@ form{
     justify-content: space-between;
     border-bottom: 1px solid #ccc;
     margin-bottom: 50px;
-    
+
 }
