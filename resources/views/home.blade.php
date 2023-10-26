@@ -35,39 +35,8 @@
        <h1> Welcome, {{ Auth::user()->name }}</h1>
     </div>
 
-   <footer>
-      <div class="row">
-        <div class="col">
-          <img src="{{ asset('images/food.jpg') }}" alt="" class="logo">
-          <p>welcome to our site</p>
-        </div>
-        <div class="col">
-          <h3>office info</h3>
-          <p>Mirpur 10</p>
-          <p>Dhaka, Bangladesh, 1205</p>
-          <p class="email-address">food_house@gmail.com</p>
-          <p>Phone: 92242345</p>
-        </div>
-        <div class="col">
-          <h3>Links</h3>
-          <ul>
-          <li><a href="">Home</a></li>
-          <li><a href="">Services</a></li>
-          <li><a href="">About Us</a></li>
-          <li><a href="">Features</a></li>
-          <li><a href="">Contracts</a></li>
-          </ul>
-        </div>
-        <div class="col">
-          <h3>FeedBack</h3>
-          <form>
-            <input type="text" placeholder="Enter your feeling">
-            <input type="submit" value="submit">
-          </form>
-        </div>
-      </div>
-  </footer> 
 
+  @include('pages.footer')
 
 </body>
 </html>

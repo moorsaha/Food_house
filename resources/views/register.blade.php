@@ -24,15 +24,15 @@
                         @csrf
                         <div class="mb-3">
                             <label for="name" class="form-label">Name</label>
-                            <input type="text" name="name" class="form-control" id="name" placeholder="John Doe" required>
+                            <input type="text" name="name" class="form-control" id="name" placeholder="Example" required>
                         </div>
                         <div class="mb-3">
                             <label for="email" class="form-label">Email address</label>
-                            <input type="email" name="email" class="form-control" id="email" placeholder="name@example.com" required>
+                            <input type="email" name="email" class="form-control" id="email" placeholder="email@gmail.com" required>
                         </div>
                         <div class="mb-3">
                             <label for="password" class="form-label">Password</label>
-                            <input type="password" name="password" class="form-control" id="password" required>
+                            <input type="password" name="password" placeholder="Password to login this site." class="form-control" id="password" required>
                         </div>
                         <div class="mb-3">
                             <div class="d-grid">
@@ -44,5 +44,7 @@
             </div>
         </div>
     </div>
+
+    
 </body>
 </html>
