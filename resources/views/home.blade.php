@@ -68,8 +68,15 @@
 
           </div>
           {{-- logout --}}
-          <div class="sidebar-logout">
+          {{-- <div class="sidebar-logout">
               <a href="#"><ion-icon name="log-out-outline"></ion-icon>Logout</a>
+          </div> --}}
+          <div class="sidebar-logout">
+            <form action="{{ route('logout') }}" method="POST">
+              @csrf
+              @method('DELETE')
+              <button type="submit"><ion-icon name="log-out-outline"></ion-icon>Logout</button>
+            </form>
           </div>
 
       </div>
@@ -227,7 +234,48 @@
                 </div>
               </div>
               <div class="detail-card">
-
+                <img class="detail-img" src="{{ asset('images/cold drinks.jpg') }}" alt="no image found">
+                <div class="detail-desc">
+                  <div class="detail-name">
+                    <h4>cold drinks</h4>
+                    <p class="detail-sub">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Placeat asperiores voluptate voluptas.</p>
+                    <p class="price">$9.30</p>
+                  </div>
+                  <ion-icon class="detail-favorites" name="bookmark-outline"></ion-icon>
+                </div>
+              </div>
+              <div class="detail-card">
+                <img class="detail-img" src="{{ asset('images/burger1.jpg') }}" alt="no image found">
+                <div class="detail-desc">
+                  <div class="detail-name">
+                    <h4>Burger</h4>
+                    <p class="detail-sub">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat minus vitae deserunt.</p>
+                    <p class="price">$5.30</p>
+                  </div>
+                  <ion-icon class="detail-favorites" name="bookmark-outline"></ion-icon>
+                </div>
+              </div>
+              <div class="detail-card">
+                <img class="detail-img" src="{{ asset('images/coffee1.jpg') }}" alt="no images found">
+                <div class="detail-desc">
+                  <div class="detail-name">
+                    <h4>Hot coffee</h4>
+                    <p class="detail-sub">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus maiores obcaecati sunt.</p>
+                    <p class="price">$5.00</p>
+                  </div>
+                  <ion-icon class="detail-favorites" name="bookmark-outline"></ion-icon>
+                </div>
+              </div>
+              <div class="detail-card">
+                <img class="detail-img" src="{{ asset('images/salad.jpg') }}" alt="no images found">
+                <div class="detail-desc">
+                  <div class="detail-name">
+                    <h4>Fresh salad</h4>
+                    <p class="detail-sub">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui fuga suscipit quia.</p>
+                    <p class="price">$30.23</p>
+                  </div>
+                  <ion-icon class="detail-favorites" name="bookmark-outline"></ion-icon>
+                </div>
               </div>
             </div>
           </div>
