@@ -30,15 +30,17 @@
                     @endauth
                 </div>
             @endif
-        </div> --}}
+        </div>
 
 
 
 
 
 
-        {{-- @include('pages.footer')
+        {{-- @include('pages.footer')--}}
+    
     </body>
+
     
 
 </html>
