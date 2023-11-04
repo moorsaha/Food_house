@@ -37,7 +37,7 @@
 
 
 
-        {{-- @include('pages.footer')--}}
+        @include('pages.footer')
     
     </body>
 
