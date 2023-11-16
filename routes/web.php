@@ -32,6 +32,7 @@ Route::group(['middleware' => 'guest'], function(){
 
 Route::group(['middleware' => 'auth'], function(){
     Route::get('/home', [HomeController::class, 'index']);
+    Route::get('/order', [HomeController::class, 'order']);
     Route::delete('/logout', [AuthController::class, 'logout'])->name('logout');
 
 });
