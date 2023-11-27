@@ -267,7 +267,7 @@
                   <ion-icon class="detail-favorites" name="bookmark-outline"></ion-icon>
                 </div>
               </div>
-
+              
               <div class="detail-card">
                 <img class="detail-img" src="{{ asset('images/salad.jpg') }}" alt="no images found">
                 <div class="detail-desc">
