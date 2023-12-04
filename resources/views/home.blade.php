@@ -4,60 +4,18 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Laravel 10 Custom Login and Registration</title>
-    {{-- <link rel="stylesheet" href="{{ asset('css/nav.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/footer.css') }}"> --}}
+
     <link rel="stylesheet" href="{{ asset('css/body.css') }}">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
 </head>
 <body>
-{{-- <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container">
-          <a class="navbar-brand" href="#">Food House</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-            </ul>
-            <form action="{{ route('logout') }}" method="POST" class="d-flex" role="search">
-                @csrf
-                @method('DELETE')
-                <button class="btn btn-danger" type="submit">Logout</button>
-            </form>
-          </div>
-        </div>
-</nav> --}}
- 
-    {{-- <div class="container">
-       <h1> Welcome, {{ Auth::user()->name }}</h1>
-    </div> --}}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
-            {{-- starting new code here --}}
-        {{-- sidebar --}}
+       
         <div class="sidebar">
-          {{-- logo --}}
+          
           <h1 class="logo">FoodHouse</h1>
 
-          {{-- list of menu --}}
+          
           <div class="sidebar-menu">
               <a href="#"><ion-icon name="storefront-outline"></ion-icon>Home</a>
               <a href="#"><ion-icon name="receipt-outline"></ion-icon>Bills</a>
@@ -85,26 +43,26 @@
 
 
 
-      {{-- main --}}
+     
       <div class="main">
-        {{-- main navbar --}}
+       
         <div class="main-navbar">
-          {{-- menu when appear on mobile version --}}
+          
           <ion-icon class="menu-toggle" name="menu-outline"></ion-icon>
-          {{-- search bar --}}
+          
           <div class="search">
             <input type="text" placeholder="What you want to eat?">
             <button class="search-btn">Search</button>
           </div>
-          {{-- profile icon on leftside of navbar --}}
+          
           <div class="profile">
             <a class="cart" href="#"><ion-icon name="cart-outline"></ion-icon></a>
             <a class="user" href="#"><ion-icon name="person-outline"></ion-icon></a>
           </div>
         </div>
-        {{-- main heightlight --}}
+        
         <div class="main-highlight">
-          {{-- title section and arrow --}}
+          
           <div class="main-header">
             <h2 class="main-title">Recomendations</h2>
             <div class="main-arrow">
@@ -112,7 +70,7 @@
               <ion-icon class="next" name="chevron-forward-circle-outline"></ion-icon>
             </div>
           </div>
-          {{-- highlight menu --}}
+          
           <div class="highlight-wrapper">
             <div class="highlight-card">
               <img class="highlight-img" src="{{ asset('images/salad.jpg') }}" alt="no image found">
@@ -144,9 +102,9 @@
             </div>
           </div>
         </div>
-        {{-- main menu/order --}}
+        
         <div class="main-menus">
-          {{-- filter section --}}
+          
           <div class="main-filter">
             <div>
               <h2 class="main-title">Menu <br>Category</h2>
@@ -207,7 +165,7 @@
             </div>
           </div>
           <hr class="divider">
-          {{-- list of food menus --}}
+          
           <div class="main-details">
             <h2 class="main-title">Choose Order</h2>
             <div class="detail-wrapper">
