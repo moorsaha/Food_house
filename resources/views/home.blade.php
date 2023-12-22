@@ -237,6 +237,24 @@
                   <ion-icon class="detail-favorites" name="bookmark-outline"></ion-icon>
                 </div>
               </div>
+
+              <div class="detail-card">
+                <a href="{{ url('/order') }}">
+                
+                  <img class="detail-img" src="{{ asset('images/burger.jpg') }}" alt="no images found">
+                <div class="detail-desc">
+                  <div class="detail-name">
+                    <h4>Fresh salad</h4>
+                    <p class="detail-sub">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui fuga suscipit quia.</p>
+                    <p class="price">$30.23</p>
+                  </div>
+                  <ion-icon class="detail-favorites" name="bookmark-outline"></ion-icon>
+                </div>
+                
+                </a>
+              </div>
+
+
             </div>
           </div>
         </div>
