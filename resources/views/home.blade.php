@@ -17,7 +17,7 @@
 
           
           <div class="sidebar-menu">
-              <a href="#"><ion-icon name="storefront-outline"></ion-icon>Home</a>
+              <a href="{{ url('/home') }}"><ion-icon name="storefront-outline"></ion-icon>Home</a>
               <a href="#"><ion-icon name="receipt-outline"></ion-icon>Bills</a>
               <a href="#"><ion-icon name="wallet-outline"></ion-icon>Wallet</a>
               <a href="#"><ion-icon name="notifications-outline"></ion-icon>Notification</a>
